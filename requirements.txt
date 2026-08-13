@@ -1,0 +1,12 @@
+transformers
+accelerate
+huggingface_hub
+scikit-learn
+pandas
+numpy
+tqdm
+datasets
+vllm==0.15.0
+scipy
+matplotlib
+kagglehub
