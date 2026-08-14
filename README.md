@@ -70,7 +70,17 @@ On the held-out test split used in the paper, structured inference improves Macr
 
 ### Citation
 
-
+```
+@misc{junias2026atomicevidencelogicalcomposition,
+      title={From Atomic Evidence to Logical Composition: Structured Compositional Reasoning over Compound Answer Options}, 
+      author={Obed Junias and Maria Leonor Pacheco},
+      year={2026},
+      eprint={2608.12836},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2608.12836}, 
+}
+```
 ### Contact
 
 obed.junias@colorado.edu
