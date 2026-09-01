@@ -1407,7 +1407,7 @@ def score_batch_verbalized(scorer, questions, hypotheses_list, constraints_list,
 
 
 N_REPEATS = 5
-SAMPLE_TEMPERATURE = 0.0
+SAMPLE_TEMPERATURE = 0.7
 METHODS_TO_RUN = ["confidence_mc", "independent", "generation_sampling", "verbalized"]
 
 sp_logprob = SamplingParams(temperature=SAMPLE_TEMPERATURE, max_tokens=1, logprobs=20)
