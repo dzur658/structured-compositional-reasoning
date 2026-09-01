@@ -1,0 +1,8 @@
+# ignore pycache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ignore uv.lock
+uv.lock
