@@ -38,7 +38,7 @@ SAMPLE_QA_TYPES = ["AND", "OR", "NEITHER", "Mixed"]
 SAMPLES_PER_OPERATOR = 250
 SAMPLE_OFFSET = 0
 
-RESULTS_DIR = Path("./results")
+RESULTS_DIR = Path("./results-lcsqa")
 RESULTS_DIR.mkdir(exist_ok=True)
 
 _OPTION_KEYS = ["A", "B", "C", "D"]
