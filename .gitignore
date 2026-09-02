@@ -6,3 +6,12 @@ __pycache__/
 
 # ignore uv.lock
 uv.lock
+
+# ignore results
+results/
+results*
+lcsqa_0to3shot_direct*
+lsata_0to3shot*
+
+# ignore log files
+logs/
