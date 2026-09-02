@@ -38,7 +38,7 @@ SAMPLE_QA_TYPES = ["AND", "OR", "NEITHER", "Mixed"]
 SAMPLES_PER_OPERATOR = 250
 SAMPLE_OFFSET = 0
 
-RESULTS_DIR = Path("./results-lcsqa")
+RESULTS_DIR = Path("./results-lcsqa-or-fix")
 RESULTS_DIR.mkdir(exist_ok=True)
 
 _OPTION_KEYS = ["A", "B", "C", "D"]
@@ -1352,8 +1352,15 @@ def score_batch_independent(scorer, questions, hypotheses_list, constraints_list
     for ex_idx, a, c in seen_keys:
         pt_plus = raw_true_plus.get((ex_idx, a, c), 0.0)
         pt_minus = raw_true_minus.get((ex_idx, a, c), 0.0)
+        
+        # old scoring method
         denom = pt_plus + pt_minus
-        p_plus, p_minus = (pt_plus / denom, 1.0 - pt_plus / denom) if denom > 0 else (0.0, 0.0)
+        p_plus_old, p_minus_old = (pt_plus / denom, 1.0 - pt_plus / denom) if denom > 0 else (0.0, 0.0)
+        
+        # new scoring method
+        p_plus = pt_plus
+        p_minus = 1.0 - p_plus
+        
         results[ex_idx].setdefault(a, {})[c] = {
             "fit_label": "", "p_plus": p_plus, "p_minus": p_minus,
             "active": "H+" if p_plus >= p_minus else "H-",
