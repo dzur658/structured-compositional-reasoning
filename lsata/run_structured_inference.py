@@ -33,7 +33,7 @@ SPLIT = "validation"
 
 VALID_QA_TYPES = ["AND", "OR", "NEITHER", "Mixed"]
 SAMPLE_QA_TYPES = ["AND", "OR", "NEITHER", "Mixed"]
-SAMPLES_PER_OPERATOR = 500
+SAMPLES_PER_OPERATOR = 250
 SAMPLE_OFFSET = 0
 
 RESULTS_DIR = Path("./results")
@@ -1667,7 +1667,7 @@ def score_batch_verbalized(scorer, questions, hypotheses_list, constraints_list,
     return results
 
 N_REPEATS = 5
-SAMPLE_TEMPERATURE = 0.0
+SAMPLE_TEMPERATURE = 0.7
 METHODS_TO_RUN = ["confidence_mc", "independent", "generation_sampling", "verbalized"]
 
 sp_logprob = SamplingParams(temperature=SAMPLE_TEMPERATURE, max_tokens=1, logprobs=20)
