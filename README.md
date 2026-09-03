@@ -1,5 +1,4 @@
-# Independent Reproduction Attempt: "From Atomic Evidence to
-# Logical Composition" (Junias & Pacheco, 2026)
+# Independent Reproduction Attempt: "From Atomic Evidence to Logical Composition" (Junias & Pacheco, 2026)
 
 This fork documents an independent attempt to run the released code for the paper's structured inference framework on the validation splits of both benchmarks ([logical-sata](https://huggingface.co/datasets/ojayy/logical-sata) and [logical-csqa](https://huggingface.co/datasets/ojayy/logical-csqa)), prior to a planned (and ultimately blocked) calibration-feature ablation.
 
