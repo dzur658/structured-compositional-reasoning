@@ -184,7 +184,7 @@ The paper's core claim of NEITHER recoverability via structured inference appear
 **The paper's relative calibration: Platt, isotonic, and the
 4-feature logistic regression from section 3.5 Score Calibration does not exist in this codebase.**
 
-As a result, full reproduction remains blocked until if/when an implementation of section 3.5 Score Calibration is released.
+As a result, full reproduction remains blocked until an implementation of section 3.5 Score Calibration is released.
 
 ### 2. OR tie pathology in the independent route
 See more in the branch located [here](https://github.com/dzur658/structured-compositional-reasoning/tree/ind-or-scoring)
